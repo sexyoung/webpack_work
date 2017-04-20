@@ -1,2 +1,3 @@
 import $ from 'jquery';
-console.warn('about');
+import style from './about.scss';
+console.warn('about!');

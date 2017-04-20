@@ -5,6 +5,7 @@ module.exports = {
     home: "./app/home.js",
     about: "./app/about.js"
   },
+  devtool: '#cheap-module-source-map',
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
@@ -16,6 +17,7 @@ module.exports = {
   },
   module: {
     loaders: [
+      { test: /\.(png|jpg)$/, loader: 'file-loader?name=images/[name]---[hash].[ext]' },
       {
         test: /\.scss$/,
         use: [

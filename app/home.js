@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import style from './home.scss';
+import img from './cat.jpg';
 
 // function component () {
 //   var element = document.createElement('div');
@@ -10,4 +11,4 @@ import style from './home.scss';
 // }
 //
 // document.body.appendChild(component());
-console.warn('hello', style);
+console.warn('hello', style, img);
