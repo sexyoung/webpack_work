@@ -25,7 +25,7 @@ module.exports = {
           // This comment solves it, but breaks testing from a local network
           // https://github.com/webpack/css-loader/issues/232#issuecomment-240449998
           // 'css-loader?sourceMap',
-          'css-loader?importLoaders=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          'css-loader?importLoaders=1&modules&localIdentName=[local]',
           'sass-loader',
         ],
       }
